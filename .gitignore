@@ -1,0 +1,7 @@
+__pycache__/InfoGetterIF.cpython-310.pyc
+Weather.py
+.devcontainer/devcontainer.json
+__pycache__/Weather.cpython-310.pyc
+.devcontainer/docker-compose.yml
+docker-compose.yml
+entrypoint.sh
