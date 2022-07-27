@@ -23,7 +23,8 @@ class weatherGetter(InfoGetterIF.InfoGetterIF):
                 ["temp_lo", str(temp_lo)],
                 ["temp_hi", str(temp_hi)],
                 ["prcp", str(prcp)],
-                ["date", "\'"+date+"\'"]
+                ["date", "\'"+date+"\'"],
+                ["checked", "false"]
             ],
             "table" : "weather"
         }       

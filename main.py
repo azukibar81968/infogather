@@ -16,4 +16,4 @@ if __name__ == "__main__":
             getter.GatherAndUpload()
 
         # 適当に待つ
-        time.sleep(3600*23)
+        time.sleep(60)
