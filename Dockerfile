@@ -13,6 +13,7 @@ RUN apt install -y git
 RUN apt install sudo
 RUN apt install wget
 RUN pip install requests
+RUN pip install fitbit
 
 
 RUN apt-get -y install gosu

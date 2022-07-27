@@ -7,13 +7,19 @@ import InfoGetterIF
 
 class weatherGetter(InfoGetterIF.InfoGetterIF):
     def _gatherData(self):
-        url = "https://api.open-meteo.com/v1/forecast?latitude=35.6785&longitude=139.6823&hourly=temperature_2m&hourly=precipitation&timezone=Asia%2FTokyo"
+#        url = "https://api.open-meteo.com/v1/forecast?latitude=35.6785&longitude=139.6823&hourly=temperature_2m&hourly=precipitation&timezone=Asia%2FTokyo"
+        INDDICT = json.load(open("individualData.json",'r'))
+        URLDICT = json.load(open("API.json",'r'))
+        url = URLDICT["weather"] + INDDICT["iriyama"]["location_id"]
+
+
         res = requests.get(url)
         data = json.loads(res.text)
-        city = "Tokyo"
-        temp_hi = max(data["hourly"]["temperature_2m"][24:48])
-        temp_lo = min(data["hourly"]["temperature_2m"][24:48])
-        prcp = max(data["hourly"]["precipitation"][:24])
+        city = "Nagoya"
+        #pprint.pprint(data)
+        temp_hi = data["forecasts"][1]["temperature"]["max"]["celsius"]
+        temp_lo = data["forecasts"][1]["temperature"]["min"]["celsius"]
+        prcp = str(int(data["forecasts"][1]["chanceOfRain"]["T06_12"].strip("%"))/100)
         date = str(datetime.date.today() + datetime.timedelta(days=1))
 
         # DBに格納
@@ -28,4 +34,6 @@ class weatherGetter(InfoGetterIF.InfoGetterIF):
             ],
             "table" : "weather"
         }       
+
+#        pprint.pprint(queryDict)
         return queryDict
