@@ -5,10 +5,12 @@ import json
 import pprint
 import InfoGetterIF
 import Weather
+import Fitbit
 
 if __name__ == "__main__":
     getterList = [
-        Weather.weatherGetter()
+#        Weather.weatherGetter(),
+        Fitbit.fitbitGetter()
     ]
 
     while True:

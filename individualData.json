@@ -2,6 +2,9 @@
     "iriyama":{
         "location":"名古屋",
         "location_id":"230010",
-        "fitbit_token" : "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM0IySDMiLCJzdWIiOiI5Rk1NUEIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJzZXQgcm94eSBybnV0IHJwcm8gcnNsZSByYWN0IHJyZXMgcmxvYyByd2VpIHJociBydGVtIiwiZXhwIjoxNjU4OTg5MjQ2LCJpYXQiOjE2NTg5NjA0NDZ9.qVFPlfoVE560ovK0_AhLLp7lMZPLP1Vo1DHvqD92DyM"
+        "fitbit_client_id" : "23B2H3",
+        "fitbit_client_secret" : "a1b9afd7e881dfef6e4974076a79b518",
+        "fitbit_token" : "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM0IySDMiLCJzdWIiOiI5Rk1NUEIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJzZXQgcm94eSBybnV0IHJwcm8gcnNsZSByYWN0IHJyZXMgcmxvYyByd2VpIHJociBydGVtIiwiZXhwIjoxNjU4OTg5MjQ2LCJpYXQiOjE2NTg5NjA0NDZ9.qVFPlfoVE560ovK0_AhLLp7lMZPLP1Vo1DHvqD92DyM",
+        "fitbit_refresh_token" : "897b004a32c0105d5241268b7801fb7a47cff6c9f0ec37f58598ac50e0cd1177"
     }
 }
